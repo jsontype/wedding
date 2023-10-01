@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>롤링 페이퍼</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #FFEBE6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2em;
+      color: #495057;
+      margin: 20px 0;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      display: inline-block;
+      width: 24%;
+      box-sizing: border-box;
+      padding: 10px;
+      background-color: #ffffff;
+      margin-right: 5px;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 6px 0px #0000001a;
+    }
+
+    .header {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #495057;
+    }
+
+    .content {
+      margin-bottom: 20px;
+      font-size: 0.9em;
+      color: #343a40;
+      line-height: 1.5em;
+    }
+
+    .header span {
+      display: block;
+      font-weight: 400;
+      color: #868e96;
+      font-size: 0.8em;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .print-btn {
+      text-align: center;
+      background-color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;      
+      border-radius: 15px;
+      box-shadow: 0px 4px 6px 0px #0000001a;
+    }
+
+    @media print {
+      .print-btn {
+        display: none;
+      }
+      @page {
+        margin: 0; /* 인쇄 시 페이지 마진 제거 */
+      }
+      body {
+        margin: 0; /* 인쇄 시 바디 마진 제거 */
+      }
+      .print-btn {
+        display: none; /* 인쇄 버튼 제거 */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class="title">「양동화 ♥ 사이토유리코」 결혼 축하합니다. <a href="https://www.barunsonmcard.com/m/yang-saito" target="_blank">청첩장</a></h1>
+  <div class="container">
+    <div class="card">
+      <div class="header">James Cho <span>2023-09-16 10:48:31</span></div>
+      <div class="content">
+        Congratulations on your wedding.. Wish you all the happiness and love through whole your lives.
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">김동규 <span>2023-09-15 23:52:25</span></div>
+      <div class="content">
+        동화야 드디어 너도 가는구나 신부도 궁금하기도 하고 너도 안본지 오래되서 꼭 가고 싶었는데 못가서 미안하고 화목한 가정 이루길 기원할게 행복해라~
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">이성욱 <span>2023-09-15 12:46:50</span></div>
+      <div class="content">
+        동화야 축하해 알콩달콩 잘 살길바랄게 ~~~
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">한은정 <span>2023-09-15 04:32:04</span></div>
+      <div class="content">
+        동화야~결혼 진심으로 너무 축하해^^유리코씨랑 항상 행복하고~ 좋은일만 가득하길 기도할께~~ 항상 건강하고! 웃음이 가득한 행복한 가정 이루며 이쁘게 잘 살아~~너무너무 축하해^^
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">염새롬 <span>2023-09-12 11:10:48</span></div>
+      <div class="content">
+        사랑하는 동생 동화야♥️새로운 가정을 이루는 네가 더 행복해지길 기도할께~많이 많이 사랑하고 축복해.
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">최원후 <span>2023-09-12 05:09:02</span></div>
+      <div class="content">
+        못가봐서 아쉽다. 멀리~멀리서도 축하할게! 행복하게 잘 지내다가 반갑게 만나자! 本当に素敵なカップル、結婚を心からお祝いします！
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">이창욱 <span>2023-09-11 08:55:44</span></div>
+      <div class="content">
+        동화야 결혼 축하한다
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">이동헌 <span>2023-09-04 18:38:56</span></div>
+      <div class="content">
+        결혼 축하드립니다 유리코씨랑 행복하고 즐거운 일만 가득하시길 바랍니다
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">염숙희 <span>2023-08-28 22:15:19</span></div>
+      <div class="content">
+        자랑스런 막내아들! 동화의 결혼을 축복한다. 기쁨의 근원인 하나님을 섬기며 희락을 누리는 삶이되길 기도한다. 항상 기뻐하고 범사에 감사하며 언제 어디서나 쉬지말고 기도하면서 아낌없이 서로 사랑하는 멋진 부부되거라.
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">양동은 <span>2023-08-26 14:01:34</span></div>
+      <div class="content">
+        사랑하는 내동생, 결혼을 너무 축하해~ 유리코와 언제나 행복하고 즐거움이 가득 하길 바란다. 너무 축복하고,너무 기쁘다. 유리코도 우리가족이 된걸 환영해요~ 사랑한다 내동생!!
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">양정화 <span>2023-08-25 18:32:08</span></div>
+      <div class="content">
+          사랑하는 막내 동화야, 너희들의 결혼을 진심으로 축하하고 축복한다. 서로 의지하고 나누며 행복하게 사랑하길 바래. 사랑하고 축복한다 내 동생 ♡
+      </div>
+    </div>
+    <div class="card">
+        <div class="header">清水萌子 <span>2023-08-12 22:23:26</span></div>
+        <div class="content">
+            この度はご結婚おめでとうございます！新卒時代からすごくお世話になっているゆりさんの結婚式が素敵なものになりますように💐そしてお二人のご家庭が幸せでいっぱいでありますように！また遊んでいただけたら嬉しいです〜！！
+        </div>
+    </div>
+    <div class="card">
+        <div class="header">吉原莉沙 <span>2023-08-12 22:15:34</span></div>
+        <div class="content">
+            ゆりさん、この度はご結婚おめでとうございます！⛪️💕 ムービーがとっても素敵で感動しました…！！ 当日現地に行けないのは残念ですが、遠くから心よりお祝いしております！ お二人の幸せが末永く続きますように☺️🫶 p.s.また皆さんで集まれたら嬉しいです😆
+        </div>
+    </div>
+    <div class="card">
+        <div class="header">山口エミリ <span>2023-08-11 21:42:38</span></div>
+        <div class="content">
+            ゆりちゃんこの度はご結婚おめでとうございます☺️👏💖💖メッセージ遅くなってしまいすみません🙇‍♀️お二人の晴れ姿を親族でもない私が参加し見届けられること心から嬉しく思います♡当日が待ち遠しいです！！
+        </div>
+    </div>
+    <div class="card">
+        <div class="header">왕성재 <span>2023-07-27 21:42:47</span></div>
+        <div class="content">
+            동화야 진심으로 결혼 축하한다!! 한국에는 언제나 널 응원하는 함열여고 멤버가 있다는거 잊지말고~~!
+        </div>
+    </div>
+    <div class="card">
+        <div class="header">志賀 <span>2023-07-21 22:27:34</span></div>
+        <div class="content">
+            結婚おめでとう！！末永くお幸せに！！
+        </div>
+    </div>
+    <div class="card">
+      <div class="header">권한주 <span>2023-07-13 23:49:23</span></div>
+      <div class="content">
+        동화형 결혼 축하드려요. 앞으로 행복하고 즐거운 일들만 가득하시길 바래요!
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">이동창 <span>2023-07-13 14:37:16</span></div>
+      <div class="content">
+        두 분의 결혼을 진심으로 축하합니다~^^ 항상 즐거움과 행복이 함께하는 가정을 이루기를 바라며~! 다시 한번 축하드려요~!!
+      </div>        
+    </div>
+    <div class="card">
+      <div class="header">최호영 <span>2023-07-13 13:44:40</span></div>
+      <div class="content">
+        항상 처음같은 마음으로 평생 함께하길 함께하는 모든 순간이 행복으로 가득하길 더 없는 기쁨으로 간직하길 기원합니다. 축하드립니다.
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">大渕知秀 <span>2023-07-13 09:08:59</span></div>
+      <div class="content">
+        ゆりちゃん結婚おめでとう！めでたすぎる！笑顔溢れる素敵な家庭を築いてね！
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">정호준 <span>2023-07-12 21:45:55</span></div>
+      <div class="content">
+        결혼 너무너무 축하드립니다 :) 앞으로 행복한일만 펼쳐지시길 바랄게요 !
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">大渕真澄 <span>2023-07-12 12:19:31</span></div>
+      <div class="content">
+        結婚おめでとう！!笑顔あふれる幸せな家庭が築けますように。ほんとにおめでと！
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">조현철 <span>2023-07-12 09:27:20</span></div>
+      <div class="content">
+        결혼축하드리고 행복하셔요.ご結婚おめでとうございます。
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">양기승 <span>2023-07-12 08:31:36</span></div>
+      <div class="content">
+        행복한 부부의 삶은 신뢰와 존중이다 항상 서로 존중하고 신뢰받는 삶을 잊지마세요 ~^^
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">최종훈 <span>2023-07-12 08:30:33</span></div>
+      <div class="content">
+        니체의 말을 빌리면 "이 반려자와 늙어서도 여전히 대화를 나눌 수가 있을까?" 두 번째 인생을 함께할 분이니까 항상 마음의 일관성을 가지고 존중하며 많은 시간을 함께하기 바랍니다. 양동화님과 유리코님의 현명한 선택을 믿습니다. 두분의 행복을 기원하며 응원합니다. 감사합니다,,
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">yuka k <span>2023-07-12 00:08:37</span></div>
+      <div class="content">
+        ご結婚おめでとうございます！ 私の大好きなゆんさんが大好きな人と結ばれたことが嬉しい！お二人にとって最高の1日になりますように…
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">김동욱 <span>2023-07-11 22:55:08</span></div>
+      <div class="content">
+        결혼 축하 드립니다! 행복하세요!
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">cozue <span>2023-07-11 22:45:05</span></div>
+      <div class="content">
+        ご結婚おめでとうございます♡末永くお幸せに！2人らしい笑いの絶えない家庭を築いてください^ - ^
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">mina <span>2023-07-11 22:30:33</span></div>
+      <div class="content">
+        ご結婚おめでとうございます！幼稚園からの親友の結婚とっても嬉しいです♥花嫁姿を楽しみにしています(^^)
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">RIE❤︎리에 <span>2023-07-11 22:20:13</span></div>
+      <div class="content">
+        ゆんちゃん結婚おめでとう〜★ほんとにほんとに自分のことのように嬉しい❤︎結婚式も楽しみ過ぎて今からワクワクしてます(^o^)
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">임봉철 <span>2023-07-11 21:26:23</span></div>
+      <div class="content">
+        동화 같은 삶이 펼쳐질꺼야~~^^결혼 축하하고 행복하게 잘 살아~~재수씨 아리가또!!
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">강민재 <span>2023-07-11 21:18:22</span></div>
+      <div class="content">
+        결혼축하하고 둘앞에 꽃길만 펼쳐지길 바랍니다. 행복하세요
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">김주환 <span>2023-07-11 20:58:50</span></div>
+      <div class="content">
+        결혼 축하드립니다. 행복한 가정생활 자주 보여주세요. 이번에도 미혼자들의 훌륭한 선생님이 되실겁니다.
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">추성엽 <span>2023-07-11 20:24:11</span></div>
+      <div class="content">
+        결혼 진심으로 축하드립니다~행복한 가정 이루시고! 꽃길만 걸으세요~
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">정인식 <span>2023-07-11 20:20:35</span></div>
+      <div class="content">
+        결혼 축하해요. 행복한 가정 잘 이루길 기원합니다.
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">정휘경 <span>2023-07-11 20:10:40</span></div>
+      <div class="content">
+        결혼 축하하고 일본에 있어서 결혼식에 참석은 못하겠네. 행복한 가정이 되길 빌어.
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">김환진 <span>2023-07-11 20:03:36</span></div>
+      <div class="content">
+        좋은소식 전해줘서 고맙네!! 결혼 축하하고 꽃길만 걷길 기도하마!!!
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">김영래 <span>2023-07-11 19:59:23</span></div>
+      <div class="content">
+        동화야 유리코씨랑 잘 어울린다. 결혼 축하해~~
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">김준엽 <span>2023-07-11 19:49:17</span></div>
+      <div class="content">
+        선생님 결혼 진심으로 축하드려요! 행복한 가정 이루시고 좋은일만 가득하세요! 🎉🎉🎉
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">신기호 <span>2023-07-11 19:38:50</span></div>
+      <div class="content">
+        이렇게 좋은 소식 들어서 기쁘네요!! 결혼식 정말 축하드리고 꽃길만 가득하세요!! 🌷
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">최정원 <span>2023-07-11 19:08:00</span></div>
+      <div class="content">
+        결혼축하해요 형 어느새 우리동화형이 결혼을하네ㅎㅎㅎ 앞으로의 살길이 축복가득하길 바래요🥰🥰
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">堀切桂子 <span>2023-07-11 18:15:45</span></div>
+      <div class="content">
+        ゆんちゃんドンファさんご結婚おめでとうございます！高校生から20年近くを共に過ごして、素敵な旦那さんと結婚する姿が見られる今を嬉しく思います。언제까지나 행복하세요〜♪
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">박진성 <span>2023-07-11 16:25:14</span></div>
+      <div class="content">
+        결혼도 동화처럼 행복하게살아~^^
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">김대식 <span>2023-07-11 16:17:20</span></div>
+      <div class="content">
+        어느새 동화가 단짝도 생기고ㅋㅋ 축하한다!!
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">江渡瑞穂 <span>2023-07-11 15:01:02</span></div>
+      <div class="content">
+        この度はご結婚おめでとうございます。勉強家で向上心の高い、とてもお似合いなご夫婦だと思います♪これからもお互いに高め合い、慈しみ合い、おじいちゃんおばあちゃんになっても笑顔の絶えない素敵な家庭を築いて下さい(_ _*)末永くお幸せに☆
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">Tamaki Saito <span>2023-07-11 14:35:08</span></div>
+      <div class="content">
+        Wishing you a long and happy marriage!!
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">桑原　美穂子 <span>2023-07-11 13:14:40</span></div>
+      <div class="content">
+        ゆんちゃん結婚おめでとう(^-^)お二人にこれからたくさんの幸せが訪れますように☆大好きだよ！！
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">岡﨑麻由子 <span>2023-07-11 13:06:55</span></div>
+      <div class="content">
+        ゆんちゃんドンファさん結婚おめでとう！素晴らしい1日になりますように！そしてこれからのお二人の幸せを願って…♡
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">김귀철 <span>2023-07-11 07:57:49</span></div>
+      <div class="content">
+        結婚おめでとうございます. いつも幸せな人生になることを祈ります..
+      </div>
+    </div>
+    <div class="card">
+      <div class="header">문무겸 <span>2023-07-10 12:38:11</span></div>
+      <div class="content">
+        동화야 결혼축하해~나도 일본어 공부하고있으면 되는거지?
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <button class="print-btn" onclick="window.print();">Print</button>
+  </div>
+</body>
+
+</html>
